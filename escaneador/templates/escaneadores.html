@@ -1,0 +1,51 @@
+<main class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 >Escaneadores</h1>
+
+            <ul class="list-group">
+
+                {% for escaneador in escaneadores %}
+
+                <div>
+                    <p>{{escaneador.estrategia}}</p>
+                    <p>En ejecucion: {{escaneador.en_ejecucion}}</p>
+
+                    <div>
+                    <form action="{% url 'escaneador_activar' escaneador.id%}" method="POST">
+                        {% csrf_token %}
+    
+                        <button>
+                            Activar
+                        </button>
+
+                    </form>
+
+                    <form action="{% url 'escaneador_desactivar' escaneador.id%}" method="POST">
+                        {% csrf_token %}
+
+                        <button>
+                            Desactivar
+                        </button>
+
+                    </form>
+
+                    <form action="{% url 'ver_operaciones' escaneador.id%}" method="POST">
+                        {% csrf_token %}
+
+                        <button>
+                            Ver operaciones
+                        </button>
+
+                    </form>
+
+                    </div>
+                 </div>
+
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+
+</main>

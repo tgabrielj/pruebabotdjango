@@ -1,0 +1,18 @@
+<h1>VER OPERACIONES</h1>
+
+<p>{{escaneador_id}}</p>
+
+<ul>
+
+    {% for operacion in operaciones %}
+
+    <div>
+        <p>Nombre Estrategia: {{operacion.nombre_estrategia}}</p>
+        <p>Fecha: {{operacion.fecha}}</p>
+        <p>Precio Entrada: {{operacion.precio_entrada}}</p>
+    </div>
+
+    {% endfor %}
+
+</ul>
+
