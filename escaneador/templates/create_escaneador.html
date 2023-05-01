@@ -1,0 +1,14 @@
+<form action="/escaneadores/create/" method="POST">
+                
+    <h1>Create task</h1>
+
+    {{error}}
+
+    {% csrf_token %}
+
+    {{form}}
+    <button>
+        Save
+    </button>
+
+</form>

@@ -23,6 +23,7 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'),
     path('escanear/', views.escanear, name='escanear'),
     path('escaneadores/', views.escaneadores, name='escaneadores'),
+    path('escaneadores/create/',views.create_escaneador, name = 'create_escaneador' ),
     path('escaneadores/activar/<int:escaneador_id>/', views.escaneador_activar, name = 'escaneador_activar' ),
     path('escaneadores/ver_operaciones/<int:escaneador_id>/', views.ver_operaciones, name = 'ver_operaciones' ),
     path('escaneadores/desactivar/<int:escaneador_id>/', views.escaneador_desactivar, name = 'escaneador_desactivar' ),
