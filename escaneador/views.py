@@ -6,7 +6,7 @@ import random
 from .thread import CreateStudentsThread, CreateEscaneadorThread, EstrategiaCruceEmasThread
 
 from .utilidades.dataframes_estrategias import *
-from utilidades.tvDatafeed import Interval as inter
+from .utilidades.tvDatafeed import Interval as inter
 
 
 

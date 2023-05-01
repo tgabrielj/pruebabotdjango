@@ -4,7 +4,7 @@ import time
 from django.shortcuts import get_object_or_404
 #from tvDatafeed import Interval as inter
 
-from utilidades.tvDatafeed import Interval as inter
+from .utilidades.tvDatafeed import Interval as inter
 from .utilidades.dataframes_estrategias import *
 from .utilidades.estrategias import *
 
