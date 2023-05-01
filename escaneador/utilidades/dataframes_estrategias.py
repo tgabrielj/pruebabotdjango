@@ -1,4 +1,4 @@
-from tvDatafeed import TvDatafeed, Interval as inter
+from .tvDatafeed import TvDatafeed, Interval as inter
 import pandas as pd
 from .indicadores import *
 
