@@ -11,7 +11,6 @@ backtrader==1.9.76.123
 brotlipy==0.7.0
 ccxt==1.62.42
 certifi==2022.12.7
-cffi @ file:///C:/ci/cffi_1625831756778/work
 chardet @ file:///C:/ci/chardet_1607706937985/work
 charset-normalizer==2.0.8
 click==8.0.3
