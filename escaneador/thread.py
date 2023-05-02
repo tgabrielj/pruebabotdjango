@@ -77,9 +77,10 @@ class EstrategiaCruceEmasThread(threading.Thread):
 
         try:
 
+            alertas = []
 
             while self.escaneador.en_ejecucion == True:
-                alertas = []
+                
                 dataframe_estrategia = dataframe_estrategia_cruce_emas("BINGX","SOLUSDT.PS", inter.in_1_minute)
                 indice_dataframe_intervalo_seleccionado = dataframe_estrategia.index
 
